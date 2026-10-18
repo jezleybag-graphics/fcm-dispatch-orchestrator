@@ -1,0 +1,34 @@
+{
+  "name": "fcm-dispatch-orchestrator",
+  "version": "1.2.0",
+  "description": "Zero-framework Strict TypeScript & Supabase dispatch library: pure routing logic, role-isolated device registries, 60s idempotency cache, 100-token batch chunking, and tiered LLM triage.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "tsc && node --test dist/tests/dispatch-engine.test.js"
+  },
+  "keywords": [
+    "typescript",
+    "esm",
+    "supabase",
+    "fcm-v1",
+    "rate-limiting",
+    "idempotency",
+    "automation-pipeline"
+  ],
+  "author": "Jezreel Dave Leybag",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
